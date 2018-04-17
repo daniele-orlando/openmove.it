@@ -1,4 +1,2 @@
-/vendor
+/vendor/*
 !/vendor/modernizr.js
-!/vendor/lodash
-!/vendor/jquery
