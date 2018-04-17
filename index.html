@@ -1,173 +1,147 @@
-<!DOCTYPE html>
-<!--  This site was created in Webflow. http://www.webflow.com -->
-<!--  Last Published: Sat Aug 26 2017 16:13:13 GMT+0000 (UTC)  -->
-<html data-wf-page="57afb60254eef5b558cd999b" data-wf-site="57880938f9ef05301bf46c71">
-<head>
-  <meta charset="utf-8">
-  <title>OpenMove</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/openmoveasd.webflow.css" rel="stylesheet" type="text/css">
-  <link href="images/Logo-32.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/256.jpg" rel="apple-touch-icon">
-  <style>
-    .hero_navigation_logo {
-        visibility: hidden;
-    }
-    .hero_navigation_text {
-        color: white;
-    }
-    .hero_navigation_top {
-        border-color: white;
-    }
 
-    video {
-            height: inherit;
-            max-height: inherit;
-            width: 100%;
-            object-fit: cover;
-            z-index: -100;
-    }
-</style>
-</head>
-<body>
-  <header class="hero">
-    <div class="hero-video w-background-video">
-      <div class="hero-box">
-        <video class="hero-video"
+<!DOCTYPE html>
+<html class="no-js">
+        <head>
+                <meta content="utf-8" http-equiv="Content-Encoding"/>
+                <meta charset="utf-8" content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no"/> -->
+
+                <meta name="description" content="Parkour Academy"/>
+                <meta name="keywords" content=""/>
+                <meta name="author" content="Daniele Orlando <openmove@danieleorlando.com>"/>
+
+                <title>OpenMove | Parkour Academy</title>
+
+                <!--  The base URL/target for all relative URLs in a document. -->
+                <!-- <base href="https://domain/path/"/> -->
+
+                <link rel="stylesheet" href="/styles/style.css"/>
+
+                <!-- <link rel="alternate" type="application/atom+xml" title="{title} Atom Feed" href="{url}"/> -->
+
+                <link rel="icon" href="/favicons/favicon.ico"/>
+                <link rel="shortcut icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png"/>
+                <link rel="shortcut icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png"/>
+                <link rel="shortcut icon" href="/favicons/favicon.svg" sizes="any" type="image/svg+xml"/>
+                <!--
+                | MacOS Safari pinned tab favion.
+                | The SVG file must be a single layer and the viewBox attribute must be set to "0 0 16 16".
+                -->
+                <link rel="mask-icon" href="/favicons/favicon.svg"  color="rgb(153, 0, 0)"/>
+                <link rel="apple-itouch-icon" href="/favicons/favicon.png"/>
+                <link rel="apple-itouch-icon" href="/favicons/favicon-16x16.png" sizes="16x16" type="image/png"/>
+                <link rel="apple-itouch-icon" href="/favicons/favicon-32x32.png" sizes="32x32" type="image/png"/>
+                <link rel="apple-itouch-icon" href="/favicons/favicon-128x128.png" sizes="128x128" type="image/png"/>
+
+                <link rel="author" href="mailto:openmove@danieleorlando.com"/><!-- mailto: or link. -->
+        </head>
+        <body>
+                
+<div id="Hero">
+        <video id="Hero-Video"
                autoplay="true"
                preload="none"
                loop="true"
                muted="true"
-               poster="videos/Video-bg-20160812-poster-00001.jpg"
+               poster="/contents/hero-poster.jpg"
                onended-off="this.currentTime = 0; this.play()">
                 <!-- webm source should be declared before mp4 due to a bug in old Chrome versions. -->
-                <source type="video/webm" src="videos/Video-bg-20160812-transcode.webm">
-                <source type="video/mp4" src="videos/Video-bg-20160812-transcode.mp4">
+                <source type="video/webm" src="/contents/hero.webm"/>
+                <source type="video/mp4"  src="/contents/hero.mp4"/>
+                Your browser doesn't support HTML videos.
         </video>
-        <header class="hero-header" style="display: none">
-          <div class="hero-navigation-left"><a class="hero-navigation-logo w-inline-block" href="landing.html"><img class="hero-navigation-logoimg" src="images/Logo.png" width="40"></a></div>
-          <nav class="hero-navigation">
-            <div class="hero-navigation-column">
-              <div class="hero-navigation-main"><a class="hero-navigation-mainmarker w-inline-block" href="corsi-parkour.html"></a>
-                <a class="hero-navigation-link w-inline-block" href="corsi-parkour.html">
-                  <h2 class="hero-navigation-text">I Nostri Corsi</h2>
-                </a>
-              </div>
-              <div class="hero-navigation-sub">
-                <div class="hero-navigation-subentry"><a class="hero-navigation-submarker w-inline-block" href="corsi/parkour-lanciano.html"></a>
-                  <a class="hero-navigation-link w-inline-block" href="corsi/parkour-lanciano.html">
-                    <h4 class="hero-navigation-text">Parkour Lanciano</h4>
-                  </a>
-                </div>
-                <div class="hero-navigation-subentry"><a class="hero-navigation-submarker w-inline-block" href="corsi/parkour-pescara.html"></a>
-                  <a class="hero-navigation-link w-inline-block" href="corsi/parkour-pescara.html">
-                    <h4 class="hero-navigation-text">Parkour Pescara</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="hero-navigation-column">
-              <div class="hero-navigation-main"><a class="hero-navigation-mainmarker w-inline-block" href="il-parkour.html"></a>
-                <a class="hero-navigation-link w-inline-block" href="il-parkour.html">
-                  <h2 class="hero-navigation-text">Il Parkour</h2>
-                </a>
-              </div>
-              <div class="hero-navigation-sub">
-                <div class="hero-navigation-subentry"><a class="hero-navigation-submarker w-inline-block" href="null.html"></a>
-                  <a class="hero-navigation-link w-inline-block" href="null.html">
-                    <h4 class="hero-navigation-text">Articoli</h4>
-                  </a>
-                </div>
-                <div class="hero-navigation-subentry"><a class="hero-navigation-submarker w-inline-block" href="null.html"></a>
-                  <a class="hero-navigation-link w-inline-block" href="null.html">
-                    <h4 class="hero-navigation-text">Galleria</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="hero-navigation-column">
-              <div class="hero-navigation-main"><a class="hero-navigation-mainmarker w-inline-block" href="la-nostra-famiglia.html"></a>
-                <a class="hero-navigation-link w-inline-block" href="la-nostra-famiglia.html">
-                  <h2 class="hero-navigation-text">La Nostra Famiglia</h2>
-                </a>
-              </div>
-              <div class="hero-navigation-sub">
-                <div class="hero-navigation-subentry"><a class="hero-navigation-submarker w-inline-block" href="null.html"></a>
-                  <a class="hero-navigation-link w-inline-block" href="null.html">
-                    <h4 class="hero-navigation-text">Chi Siamo</h4>
-                  </a>
-                </div>
-                <div class="hero-navigation-subentry"><a class="hero-navigation-submarker w-inline-block" href="null.html"></a>
-                  <a class="hero-navigation-link w-inline-block" href="null.html">
-                    <h4 class="hero-navigation-text">Dove Siamo</h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="hero-navigation-right">
-            <div class="hero-navigation-contact">
-              <a class="invitebutton w-inline-block" href="index.html">
-                <div>Contattaci</div>
-              </a>
-            </div>
-          </div>
-        </header>
-      </div>
-    </div>
-  </header>
-  <div class="hero-draft">
-    <div class="hero-draft-box">
-      <div class="hero-draft-logo">
-        <div class="hero-logo"><img class="hero-logo-emblem" sizes="(max-width: 767px) 53.265625px, 107px" src="images/Logo-W.png" srcset="images/Logo-W-p-500x601.png 500w, images/Logo-W.png 561w">
-          <div class="hero-logo-script">
-            <div class="hero_logo-scriptleft">open</div>
-            <div class="hero-logo-scriptright">move</div>
-          </div>
-          <div class="hero-logo-subscript">parkour•add academy</div>
+
+        <div id="Hero-Content">
+                
+<div class="Wip">
+        
+<div class="BrandLogo">
+        <i class="BrandLogo-Emblem icon-logo"></i>
+
+        <div class="BrandLogo-Script">
+                <span>open</span>
+                <span>move</span>
         </div>
-      </div><img class="hero-play" data-ix="animate" height="50" id="HeroPlay" src="images/Icon-Play.svg" width="50">
-      <div class="hero-draft-message">Stiamo<br>lavorando sodo<br>per mostrarti al meglio<br>la OpenMove ed il Parkour.<br><br>Nel frattempo seguici su</div>
-      <div class="hero-draft-resources"><a class="hero-draft-link hero-draft-link--facebook" href="https://facebook.com/openmoveasd/">Facebook</a><a class="hero-draft-link hero-draft-link--youtube" href="https://www.youtube.com/c/openmove">YouTube</a></div>
-    </div>
-  </div>
-  <script>
-    ;(function (undefined) {
-            'use strict'
-            var playVideoHandler = function () {
-            				console.log('fired')
-                    var video = document.getElementsByTagName('video')[0]
-                    video.play()
-                    var button = document.getElementById('HeroPlay')
-                    button.parentNode.removeChild(button)
-            }
-            var go = function () {
-                    var button = document.getElementById('HeroPlay')
-                    var style = window.getComputedStyle(button)
-                    if (style.display !== 'none') {
-                            button.onclick = playVideoHandler
-                            var video = document.getElementsByTagName('video')[0]
-                            video.autoplay = true
-														video.loop     = true
-                            var videoSrc1 = document.createElement('source')
-                            var videoSrc2 = document.createElement('source')
-                            videoSrc1.src = "videos/Video-bg-20160812-transcode.webm"
-                            videoSrc2.src = "videos/Video-bg-20160812-transcode.mp4"
-                            video.appendChild(videoSrc1)
-                            video.appendChild(videoSrc2)
-                    }
-            }
-            if (document.readyState === 'complete'
-                || document.readyState === 'loaded'
-                || document.readyState === 'interactive') {
-                    go()
-            } else {
-                    document.addEventListener('DOMContentLoaded', go)
-            }
-    })()
-</script>
-</body>
+
+        <div class="BrandLogo-Subscript">parkour•add &nbsp; academy</div>
+</div>
+
+
+        <div class="Wip-Box">
+                <div class="Wip-Intro">
+                        <span>Seguici o Contattaci</span>
+                        <br/>
+                        <span>su</span>
+                </div>
+                <a class="Wip-Card Facebook" href="https://www.facebook.com/openmoveasd/">
+                        <div class="Wip-Head">
+                                <span class="Wip-Title">Facebook</span>
+                        </div>
+
+                        <div class="Wip-Body">
+                                <div class="Wip-Picture" style="background-image: url('/contents/1e8e89.jpg');">
+                                </div>
+                        </div>
+                </a>
+                <a class="Wip-Card YouTube" href="https://www.youtube.com/user/OpenMove">
+                        <div class="Wip-Head">
+                                <span class="Wip-Title">YouTube</span>
+                        </div>
+
+                        <div class="Wip-Body">
+                                <div class="Wip-Picture" style="background-image: url('/contents/a3cf72.jpg');">
+                                </div>
+                        </div>
+                </a>
+                <a class="Wip-Card Instagram" href="https://www.instagram.com/openmove_gram/">
+                        <div class="Wip-Head">
+                                <span class="Wip-Title">Instagram</span>
+                        </div>
+
+                        <div class="Wip-Body">
+                                <div class="Wip-Picture" style="background-image: url('/contents/67a3e0.jpg');">
+                                </div>
+                        </div>
+                </a>
+        </div>
+</div>
+
+
+                <!-- <img id="HeroPlay" src="/theme/icon-play.svg" style="transition: transform 100ms; transform: rotateZ(720deg) scaleX(1.2) scaleY(1.2);"/> -->
+        </div>
+</div>
+
+
+                <script src="/vendor/modernizr.js" async defer></script>
+                <script src="/scripts/main.js" async defer></script>
+
+                <script type="application/ld+json">
+                        {
+                                "@context": "http://schema.org",
+                                "@type": "LocalBusiness",
+                                "name": "<Title>",
+                                "telephone": "<Phone>",
+                                "email": "<Email>",
+                                "address": {
+                                        "@type": "PostalAddress",
+                                        "streetAddress": "Via Marrucina, 128",
+                                        "addressLocality": "Guardiagrele (Chieti)",
+                                        "addressRegion": "Abruzzo",
+                                        "addressCountry": "Italia",
+                                        "postalCode": "66016"
+                                },
+                                "openingHoursSpecification": {
+                                        "@type": "OpeningHoursSpecification",
+                                        "dayOfWeek": {
+                                                "@type": "DayOfWeek",
+                                                "name": "Lunedì, Martedì, Mercoledì, Giovedì, Venerdì"
+                                        },
+                                        "opens": "09:00",
+                                        "closes": "20:00"
+                                }
+                        }
+                </script>
+        </body>
 </html>
